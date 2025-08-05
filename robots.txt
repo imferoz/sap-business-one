@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sap-business-one-oman.alwejhagroup.com/sitemap.xml
