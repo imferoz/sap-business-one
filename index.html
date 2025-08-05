@@ -6,14 +6,170 @@
   <title>SAP Business One ERP Solutions Oman | Al Wejha Group</title>
   <meta name="description" content="Explore SAP Business One ERP solutions in Oman with Al Wejha Group. Streamline your business with powerful and affordable enterprise resource planning systems." />
   <meta name="keywords" content="SAP Business One Oman, ERP Solutions Oman, Enterprise Resource Planning Oman, SAP ERP Oman, Business Automation Oman" />
+
   <link rel="stylesheet" href="https://mep.alwejhagroup.com/assets/css/main.css" />
   <link rel="icon" href="https://www.alwejhagroup.com/favicon.ico" type="image/x-icon" />
+  
+  <style>
+    :root {
+      --primary: #0c4a6e;
+      --accent: #38bdf8;
+      --text: #1e293b;
+      --bg: #f8fafc;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: #fff;
+      border-bottom: 1px solid #e2e8f0;
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .logo img {
+      height: 50px;
+    }
+
+    .navbar ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    .navbar a:hover {
+      color: var(--primary);
+    }
+
+    #hero {
+      background: linear-gradient(to right, #e0f7ff, #ffffff);
+      padding: 4rem 1rem;
+      text-align: center;
+    }
+
+    #hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    #hero p {
+      font-size: 1.2rem;
+      color: #475569;
+    }
+
+    #hero img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    section {
+      padding: 4rem 1rem;
+    }
+
+    .section-title h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+      color: var(--primary);
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+      line-height: 1.8;
+    }
+
+    ul li::before {
+      content: "✔️ ";
+      margin-right: 0.5rem;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: var(--primary);
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background-color: var(--accent);
+    }
+
+    .floating-buttons {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      z-index: 999;
+    }
+
+    .floating-buttons a img {
+      width: 50px;
+      height: 50px;
+      transition: transform 0.3s ease;
+    }
+
+    .floating-buttons a:hover img {
+      transform: scale(1.1);
+    }
+
+    footer {
+      background: #0f172a;
+      color: #f1f5f9;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.75rem;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
   <!-- Header -->
   <header id="header">
-    <div class="container">
+    <div class="container d-flex justify-content-between align-items-center">
       <div class="logo">
         <a href="https://www.alwejhagroup.com/">
           <img src="https://www.alwejhagroup.com/assets/images/logo.webp" alt="Al Wejha Group Logo">
@@ -22,8 +178,8 @@
       <nav class="navbar">
         <ul>
           <li><a href="https://www.alwejhagroup.com/">Home</a></li>
-          <li><a href="https://www.alwejhagroup.com/area-of-expertise">Area of Expertise</a></li>
-          <li><a href="https://www.alwejhagroup.com/our-services">Our Services</a></li>
+          <li><a href="https://www.alwejhagroup.com/area-of-expertise">Expertise</a></li>
+          <li><a href="https://www.alwejhagroup.com/our-services">Services</a></li>
           <li><a href="https://www.alwejhagroup.com/contact">Contact</a></li>
         </ul>
       </nav>
@@ -31,75 +187,71 @@
   </header>
 
   <!-- Hero Section -->
-  <section id="hero" class="hero d-flex align-items-center">
-    <div class="container text-center">
+  <section id="hero">
+    <div class="container">
       <h1>SAP Business One ERP Solutions in Oman</h1>
       <p>Enhance your business efficiency with robust ERP systems designed for SMEs in Oman.</p>
-      <img src="sap.webp" alt="SAP Business One ERP Solutions Oman" style="max-width: 100%; height: auto; margin-top: 20px;">
+      <img src="sap.webp" alt="SAP Business One ERP Solutions Oman" />
     </div>
   </section>
 
   <!-- Main Content -->
   <main id="main">
-    <section class="about pt-5 pb-5">
+    <section class="about">
       <div class="container">
         <div class="section-title">
           <h2>Streamline Your Business with SAP Business One</h2>
         </div>
-        <p>
-          <strong>Al Wejha Group</strong> offers expert deployment, customization, and support for <strong>SAP Business One</strong> – a comprehensive ERP solution tailored for small and medium enterprises in Oman. Our ERP services are perfect for industries seeking operational control and business growth.
-        </p>
+        <p><strong>Al Wejha Group</strong> offers expert deployment, customization, and support for <strong>SAP Business One</strong> – a comprehensive ERP solution tailored for small and medium enterprises in Oman.</p>
 
         <h3>Why Choose SAP Business One?</h3>
         <ul>
-          <li>✅ Real-time business insights with integrated analytics</li>
-          <li>✅ Centralized control over finance, inventory, CRM, and operations</li>
-          <li>✅ Custom modules tailored for Omani market requirements</li>
-          <li>✅ Scalable ERP system that grows with your business</li>
-          <li>✅ Full local support from certified SAP consultants in Oman</li>
+          <li>Real-time business insights with integrated analytics</li>
+          <li>Centralized control over finance, inventory, CRM, and operations</li>
+          <li>Custom modules tailored for Omani market requirements</li>
+          <li>Scalable ERP system that grows with your business</li>
+          <li>Full local support from certified SAP consultants in Oman</li>
         </ul>
 
         <h3>Industries We Serve</h3>
         <ul>
-          <li>🏗️ Construction & Contracting</li>
-          <li>🏢 Real Estate & Facility Management</li>
-          <li>🛒 Wholesale & Distribution</li>
-          <li>🏭 Manufacturing & Industrial Plants</li>
-          <li>📦 Logistics & Warehousing</li>
+          <li>Construction & Contracting</li>
+          <li>Real Estate & Facility Management</li>
+          <li>Wholesale & Distribution</li>
+          <li>Manufacturing & Industrial Plants</li>
+          <li>Logistics & Warehousing</li>
         </ul>
 
         <h3>Benefits of ERP Integration with Al Wejha</h3>
         <ul>
-          <li>🔹 Cost-effective SAP licensing and rollout</li>
-          <li>🔹 Fast-track implementation</li>
-          <li>🔹 Seamless data migration from legacy systems</li>
-          <li>🔹 Comprehensive post-launch support</li>
-          <li>🔹 Local training for your staff in Oman</li>
+          <li>Cost-effective SAP licensing and rollout</li>
+          <li>Fast-track implementation</li>
+          <li>Seamless data migration from legacy systems</li>
+          <li>Comprehensive post-launch support</li>
+          <li>Local training for your staff in Oman</li>
         </ul>
 
-        <div class="text-center mt-4">
-          <a href="https://www.alwejhagroup.com/contact" class="btn btn-primary">Request Free ERP Consultation</a>
+        <div class="text-center" style="margin-top: 2rem;">
+          <a href="https://www.alwejhagroup.com/contact" class="btn">Request Free ERP Consultation</a>
         </div>
       </div>
     </section>
   </main>
 
   <!-- WhatsApp & Email Floating Buttons -->
-  <div style="position: fixed; bottom: 20px; right: 20px; z-index: 1000;">
-    <a href="https://wa.me/96879271055" target="_blank" style="display: block; margin-bottom: 10px;">
-      <img src="https://mep.alwejhagroup.com/assets/img/whatsapp.png" alt="WhatsApp" style="height: 50px;">
+  <div class="floating-buttons">
+    <a href="https://wa.me/96879271055" target="_blank" aria-label="WhatsApp Us">
+      <img src="https://mep.alwejhagroup.com/assets/img/whatsapp.png" alt="WhatsApp" />
     </a>
-    <a href="mailto:business@alwejhagroup.com">
-      <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email" style="height: 50px;">
+    <a href="mailto:business@alwejhagroup.com" aria-label="Email Us">
+      <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email" />
     </a>
   </div>
 
   <!-- Footer -->
-  <footer id="footer" class="footer">
-    <div class="container text-center">
-      <p>&copy; 2025 Al Wejha For Construction & Development. All rights reserved.</p>
-      <a href="https://www.alwejhagroup.com/" class="visit-main-site">Visit Our Main Website</a>
-    </div>
+  <footer>
+    <p>&copy; 2025 Al Wejha For Construction & Development. All rights reserved.</p>
+    <a href="https://www.alwejhagroup.com/">Visit Our Main Website</a>
   </footer>
 
 </body>
